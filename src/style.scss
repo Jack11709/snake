@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  font-family: 'Roboto', sans-serif;
+}
+
+main.grid {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px #000;
+}
+
+div.grid-item {
+  height: 25px;
+  width: 25px;
+  border: 1px solid #000;  
+}
+
+div.grid-item.snake {
+  background-color: limegreen;
+}
+
+div.grid-item.food {
+  background-color: yellow;
+}
